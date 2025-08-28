@@ -10,8 +10,8 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "IK~sbNzjTRZ#pSOiTL-gEccrFlXXHFgH6c2ugtYmIIc8gRmXvCbZGvc",  // Your bot's session ID (keep it secure)
-    PREFIX: getConfig("PREFIX") || "+",  // Command prefix (e.g., "., / ! * - +")
+    SESSION_ID: process.env.SESSION_ID || "IK~wC1wjBCD#_AElhokf1x6oH0jVzCdoPWcUX-G2Zoxi2ioyHY4vGC0",  // Your bot's session ID (keep it secure)
+    PREFIX: getConfig("PREFIX") || "*",  // Command prefix (e.g., "., / ! * - +")
     CHATBOT: getConfig("CHATBOT") || "on", // on/off chat bot 
     BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "KHAN-MD",  // Bot's display name
     MODE: getConfig("MODE") || process.env.MODE || "public",        // Bot mode: public/private/group/inbox
@@ -19,9 +19,9 @@ module.exports = {
     BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",  // Bot's BAILEYS
 
     // ===== OWNER & DEVELOPER SETTINGS =====
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "+2250506198146",  // Owner's WhatsApp number
-    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "CHEICK BAWS",           // Owner's name
-    DEV: process.env.DEV || "+2250506198146",                     // Developer's contact number
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "+22383267744",  // Owner's WhatsApp number
+    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "𝕺𝖀𝖅𝕺𝖀🀄 BAWS",           // Owner's name
+    DEV: process.env.DEV || "+22383267744",                     // Developer's contact number
     DEVELOPER_NUMBER: '923427582273@s.whatsapp.net',            // Developer's WhatsApp ID
 
     // ===== AUTO-RESPONSE SETTINGS =====
@@ -31,7 +31,7 @@ module.exports = {
     READ_MESSAGE: process.env.READ_MESSAGE || "false",          // Mark messages as read automatically?
     REJECT_MSG: process.env.REJECT_MSG || "*📞 ᴄαℓℓ ɴσт αℓℓσωє∂ ιɴ тнιѕ ɴᴜмвєʀ уσυ ∂σɴт нανє ᴘєʀмιѕѕισɴ 📵*",
     // ===== REACTION & STICKER SETTINGS =====
-    AUTO_REACT: process.env.AUTO_REACT || "false",              // Auto-react to messages?
+    AUTO_REACT: process.env.AUTO_REACT || "true",              // Auto-react to messages?
     OWNER_REACT: process.env.OWNER_REACT || "false",              // Auto-react to messages?
     CUSTOM_REACT: process.env.CUSTOM_REACT || "false",          // Use custom emoji reactions?
     CUSTOM_REACT_EMOJIS: getConfig("CUSTOM_REACT_EMOJIS") || process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",  // set custom reacts
@@ -39,7 +39,7 @@ module.exports = {
     AUTO_STICKER: process.env.AUTO_STICKER || "false",          // Auto-send stickers?
     // ===== MEDIA & AUTOMATION =====
     AUTO_RECORDING: process.env.AUTO_RECORDING || "false",      // Auto-record voice notes?
-    AUTO_TYPING: process.env.AUTO_TYPING || "false",            // Show typing indicator?
+    AUTO_TYPING: process.env.AUTO_TYPING || "true",            // Show typing indicator?
     MENTION_REPLY: process.env.MENTION_REPLY || "false",   // reply on mentioned message 
     MENU_IMAGE_URL: getConfig("MENU_IMAGE_URL") || "https://files.catbox.moe/7zfdcq.jpg",  // Bot's "alive" menu mention image
 
@@ -49,7 +49,7 @@ module.exports = {
     ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "false",    // Block bad words?
     ANTI_LINK: process.env.ANTI_LINK || "true",    // Block links in groups
     ANTI_VV: process.env.ANTI_VV || "true",   // Block view-once messages
-    DELETE_LINKS: process.env.DELETE_LINKS || "false",          // Auto-delete links?
+    DELETE_LINKS: process.env.DELETE_LINKS || "true",          // Auto-delete links?
     ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "same", // inbox deleted messages (or 'same' to resend)
     ANTI_BOT: process.env.ANTI_BOT || "true",
     PM_BLOCKER: process.env.PM_BLOCKER || "true",
@@ -61,8 +61,8 @@ module.exports = {
     AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true", // React to status updates?
     AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true", // VIEW to status updates?
     AUTO_BIO: process.env.AUTO_BIO || "false", // ture to get auto bio 
-    WELCOME: process.env.WELCOME || "false", // true to get welcome in groups 
-    GOODBYE: process.env.GOODBYE || "false", // true to get goodbye in groups 
+    WELCOME: process.env.WELCOME || "true", // true to get welcome in groups 
+    GOODBYE: process.env.GOODBYE || "true", // true to get goodbye in groups 
     ADMIN_ACTION: process.env.ADMIN_ACTION || "false", // true if want see admin activity 
 };
         
