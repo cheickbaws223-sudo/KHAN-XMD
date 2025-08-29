@@ -44,7 +44,7 @@ module.exports = {
     MENU_IMAGE_URL: getConfig("MENU_IMAGE_URL") || "https://files.catbox.moe/7zfdcq.jpg",  // Bot's "alive" menu mention image
 
     // ===== SECURITY & ANTI-FEATURES =====
-    ANTI_DELETE: process.env.ANTI_DELETE || "true", // true antidelete to recover deleted messages 
+    ANTI_DELETE: process.env.ANTI_DELETE || "false", // true antidelete to recover deleted messages 
     ANTI_CALL: process.env.ANTI_CALL || "false", // enble to reject calls automatically 
     ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "false",    // Block bad words?
     ANTI_LINK: process.env.ANTI_LINK || "true",    // Block links in groups
@@ -57,7 +57,7 @@ module.exports = {
     // ===== BOT BEHAVIOR & APPEARANCE =====
     DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX*",  // Bot description
     PUBLIC_MODE: process.env.PUBLIC_MODE || "true",              // Allow public commands?
-    ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",        // Show bot as always online?
+    ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "true",        // Show bot as always online?
     AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true", // React to status updates?
     AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true", // VIEW to status updates?
     AUTO_BIO: process.env.AUTO_BIO || "false", // ture to get auto bio 
